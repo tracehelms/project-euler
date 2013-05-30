@@ -1,21 +1,27 @@
 class Problem1
-  # Problem
-  # Find the sum of all numbers below 1000 divisible by either 3 or 5.
-  def sumIt(max, multiples)
-    #max = 1000
-    #multiples = [3, 5]
-    numberToBeTested = 0
+  # Problem 1:
+  # Find the sum of all numbers below 'max' divisible by any of 'multiples'
+  # 
+  # Variables:
+  # max: the maximum value to be considered for summing
+  # multiples: an array of numbers to use for determining divisibility
+  #
+  # Returns:
+  # The sum of all numbers below 'max' divisble by any of 'multiples'
+  #
+  def sum_it(max, multiples)
+    number_to_be_tested = 0
     result = 0
 
-    while numberToBeTested < max do
+    while number_to_be_tested < max do
       # Test if this number is divisible by each multiple
       for multiple in multiples do
-        if numberToBeTested % multiple == 0 then
-          result += numberToBeTested
+        if number_to_be_tested % multiple == 0 then
+          result += number_to_be_tested
           break
         end
       end 
-      numberToBeTested += 1
+      number_to_be_tested += 1
     end
 
     result
