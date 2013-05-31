@@ -1,7 +1,8 @@
 class Problem1
   # Problem 1:
   # Find the sum of all numbers below 'max' divisible by any of 'multiples'
-  # 
+  
+  # sum_it
   # Variables:
   # max: the maximum value to be considered for summing
   # multiples: an array of numbers to use for determining divisibility

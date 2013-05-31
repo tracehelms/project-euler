@@ -13,4 +13,8 @@ describe Problem1 do
     Problem1.new.sum_it(1000, [3, 5]).should == 233168
   end
 
+  it "should handle 0 properly" do
+    Problem1.new.sum_it(0, [3, 5]).should == 0
+  end
+
 end

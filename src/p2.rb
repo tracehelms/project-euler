@@ -27,7 +27,7 @@ class Problem2
    
   # fibonacci
   #
-  # Variables
+  # Variables:
   # max: the maximum number to calculate
   # last_number: the previously calculated number
   # current_number: the current number of the fibonacci sequence
